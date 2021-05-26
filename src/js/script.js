@@ -1,43 +1,42 @@
-// const output = document.querySelector(".calculator__result--output");
-// const buttons = document.querySelector(".calculator__buttons");
-// const button = document.querySelector(".calculator__button");
+const output = document.querySelector(".calculator__result--output");
+const buttons = document.querySelector(".calculator__buttons");
+const button = document.querySelector(".calculator__button");
 
-// let outputStr = "";
-// let outputArr = [];
+let inputNumber = "";
 
-// buttons.addEventListener("click", function (e) {
-//   const event = e.target.closest(".calculator__button");
-//   if (event === null) return;
+buttons.addEventListener("click", function (e) {
+  const btn = e.target.closest(".calculator__button");
+  if (btn === null) return;
 
-//   const type = event.classList[1].split("--")[1];
-//   const value = event.textContent;
+  const type = btn.classList[1].split("--")[1];
+  const value = btn.textContent;
 
-//   if (type === "number") {
-//     outputStr += value;
-//     output.textContent = outputStr;
-//   }
+  if (type === "number") {
+    inputNumber += value;
+    output.textContent = inputNumber;
+  }
 
-//   if (type === "operator") {
-//     if (+outputStr > 0) outputArr.push(+outputStr);
-//     resetOutput();
+  if (type === "operator") {
+    if (value === "+") {
+    }
 
-//     if (value === "/") outputArr[0] = outputArr[0] / outputStr;
+    if (value === "-") {
+    }
 
-//     console.log(outputArr);
-//     console.log(value);
-//   }
+    if (value === "x") {
+    }
 
-//   if (type === "action") {
-//     if (value === "AC") {
-//       resetOutput();
-//       outputArr = [];
-//       console.log(outputArr);
-//       console.log(outputStr);
-//     }
-//   }
-// });
+    if (value === "/") {
+    }
 
-// const resetOutput = function () {
-//   output.textContent = "";
-//   outputStr = "";
-// };
+    if (value === "=") {
+    }
+  }
+
+  if (type === "action") {
+    if (value === "AC") {
+      output.textContent = "0";
+      inputNumber = "";
+    }
+  }
+});
