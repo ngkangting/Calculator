@@ -1,7 +1,7 @@
 {
-  "name": "base",
+  "name": "calculator",
   "version": "1.0.0",
-  "description": "Basic Template",
+  "description": "Basic Calculator",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",

@@ -1,6 +1,6 @@
-# Base
+# Calculator
 
-Basic Template To Help You Get Start With Web Development!
+Basic Calculator To Help You With Calculations!
 
 ## Requirement
 
@@ -10,20 +10,20 @@ Basic Template To Help You Get Start With Web Development!
 
 ## Getting Started
 
-This guide outline the steps needed to start Base in a development enviroment.
+This guide outline the steps needed to start Calculator in a development enviroment.
 
-- Fork the ngkangting/Base repository on Github under your username. You’ll end up with something like your_user_name/Base.
+- Fork the ngkangting/Calculator repository on Github under your username. You’ll end up with something like your_user_name/Calculator.
 
 - Clone your forked repository on your development machine.
 
 ```sh
- git clone git@github.com:ngkangting/Base.git
+ git clone git@github.com:ngkangting/Calculator.git
 ```
 
 - Add a git remote with the git url of the main repository
 
 ```sh
- git remote add upstream git@github.com:ngkangting/Base.git
+ git remote add upstream git@github.com:ngkangting/Calculator.git
 ```
 
 ## Install npm dependencies
@@ -66,7 +66,7 @@ npm install npm-run-all --save-dev
 
 ## Development
 
-- Start Base Project in development environment
+- Start Calculator Project in development environment
 
 ```sh
 npm run start
@@ -74,12 +74,12 @@ npm run start
 
 ## Production
 
-- Build Base Project for production environment
+- Build Calculator Project for production environment
 
 ```sh
 npm run build:css
 ```
 
-## View Base Project in development environment
+## View Calculator Project in development environment
 
-To view Base Project in development environment, go to http://localhost:8080
+To view Calculator Project in development environment, go to http://localhost:8080

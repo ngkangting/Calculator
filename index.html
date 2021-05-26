@@ -5,15 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- <link rel="stylesheet" href="./src/css/style.css" /> -->
-    <link rel="stylesheet" href="./src/sass/main.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
 
     <!-- <script defer src="src/js/controller.js"></script> -->
 
-    <title>Base | Getting Started With Web Development</title>
+    <title>Calculator | Get Calculating!</title>
   </head>
   <body>
-    Test
+    <header class="container">
+      <div class="calculator">
+        <div class="calculator__result">
+          <span class="calculator__result--output"></span>
+        </div>
+
+        <div class="calculator__buttons">
+          <div class="calculator__button calculator__button--action">AC</div>
+          <div class="calculator__button calculator__button--action">+ / -</div>
+          <div class="calculator__button calculator__button--action">%</div>
+          <div class="calculator__button calculator__button--operator">/</div>
+          <div class="calculator__button calculator__button--number">7</div>
+          <div class="calculator__button calculator__button--number">8</div>
+          <div class="calculator__button calculator__button--number">9</div>
+          <div class="calculator__button calculator__button--operator">x</div>
+          <div class="calculator__button calculator__button--number">4</div>
+          <div class="calculator__button calculator__button--number">5</div>
+          <div class="calculator__button calculator__button--number">6</div>
+          <div class="calculator__button calculator__button--operator">-</div>
+          <div class="calculator__button calculator__button--number">1</div>
+          <div class="calculator__button calculator__button--number">2</div>
+          <div class="calculator__button calculator__button--number">3</div>
+          <div class="calculator__button calculator__button--operator">+</div>
+          <div class="calculator__button calculator__button--number">0</div>
+          <div class="calculator__button calculator__button--action">.</div>
+          <div class="calculator__button calculator__button--action">DEL</div>
+          <div class="calculator__button calculator__button--operator">=</div>
+        </div>
+      </div>
+    </header>
+    <script src="src/js/script.js"></script>
   </body>
 </html>
